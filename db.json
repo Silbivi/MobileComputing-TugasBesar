@@ -1,0 +1,36 @@
+{
+  "employees" : [
+  {
+  "nama" : "Silvia Amanda",
+  "nilai" : "Cookiesnya enak banget"
+  },
+  {
+  "nama" : "Nurul Satria",
+  "nilai" : "Harganya murah rasanya enak, pas di kantong mahasiswa"
+  },
+  {
+  "nama" : "Ibnu Azhar",
+  "nilai" : "Ukuran cookiesnya besar, coklatnya ga pelit"
+  },
+  {
+  "nama" : "Rizki Alamsyah",
+  "nilai" : "Milknya enak, ga kemanisan"
+  },
+  {
+  "nama" : "Arda Raja",
+  "nilai" : "Mantap pokonya, bakal repeat order"
+  },
+  {
+  "nama" : "Andie Rahmat",
+  "nilai" : "Suka sama strawberry milknya, enak bangettt"
+  },
+  {
+  "nama" : "Ahnaf Ramadhan",
+  "nilai" : "Baru nyobain cookies seenak, semurah, dan sebesar ini"
+  },
+  {
+  "nama" : "Indra Kosasih",
+  "nilai" : "Harus banget cobain blueberry milk nya"
+  }
+ ]
+}
