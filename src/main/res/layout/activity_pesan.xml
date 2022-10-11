@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pesan"
+    android:padding="10dp"
+    android:background="#ECDDBA">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow android:layout_marginLeft="8dp" android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="ORDER"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Nama Pembeli" />
+
+            <EditText
+                android:id="@+id/editpembeli"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:hint="Input Nama"
+                android:shadowColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Nama Pesanan" />
+
+            <EditText
+                android:id="@+id/editnama"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:hint="Input Order" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Harga" />
+
+            <EditText
+                android:id="@+id/editharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false"
+                android:hint="15.000" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Jumlah Pesanan" />
+
+            <EditText
+                android:id="@+id/editjumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:hint="Input Jumlah" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/lineear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.289">
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="order"
+            app:backgroundTint="#A38F5E" />
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="lihat pesanan"
+            app:backgroundTint="#A38F5E" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hapus"
+            android:textColorLink="#FFFFFF"
+            app:backgroundTint="#A38F5E" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineear">
+
+
+        <TableRow android:layout_marginLeft="5dp" android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="DETAIL ORDER"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Atas Nama" />
+
+            <EditText
+                android:id="@+id/showpembeli"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Nama Pesanan" />
+
+            <EditText
+                android:id="@+id/shownama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Jumlah Pesanan" />
+
+            <EditText
+                android:id="@+id/showjumlah"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Total Harga" />
+
+            <EditText
+                android:id="@+id/showtotal"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
